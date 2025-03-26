@@ -1,19 +1,32 @@
 site_name: yumy94me的个人博客
 theme:
-  name: material
-  plaette:
-    scheme: default
-    primary: brown
-    accent: amber
+  name: material    # 主色调
+  palette: 
+    # Palette toggle for light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: sunset-glow
+      toggle:
+        icon: material/eye
+        name: 切换为 暗色
 
-    # # Palette toggle for light mode
-    # scheme: default
-    # toggle:
-    #   icon: material/toggle-switch 
-    #   name: Switch to dark mode
+    # Palette toggle for dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: sunset-glow-dark
+      toggle:
+        icon: material/eye-outline
+        name: 切换为 亮色
+    
+  icon:
+    logo: material/book-open-page-variant  # 网站 Logo
 
-    # # Palette toggle for dark mode
-    # scheme: slate
-    # toggle:
-    #   icon: material/toggle-switch-off-outline
-    #   name: Switch to light mode
+    # repo: fontawesome/brands/github        # 仓库图标
+    
+  favicon: stylesheets\icon\page_icon.png         # 网站图标
+
+extra_css:
+  - stylesheets\scheme.css
+
+repo_url: https://github.com/yumy94me/yumy94me.github.io # 右上角点击跳转的链接
+repo_name: yumy94me.github.io
+
+copyright: Copyright &copy; 2025 Lianshan Huang
