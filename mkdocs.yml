@@ -21,12 +21,45 @@ theme:
 
     # repo: fontawesome/brands/github        # 仓库图标
     
-  favicon: stylesheets\icon\page_icon.png         # 网站图标
+  favicon: stylesheets/icon/page_icon.png         # 网站图标
 
 extra_css:
-  - stylesheets\scheme.css
+  - stylesheets/scheme.css
 
 repo_url: https://github.com/yumy94me/yumy94me.github.io # 右上角点击跳转的链接
 repo_name: yumy94me.github.io
 
 copyright: Copyright &copy; 2025 Lianshan Huang
+
+nav :
+  - 主页: index.md
+  - 博客:
+      - 用mkdocs搭建一个个人网站: blog/使用MKDOCS构建个人博客.md
+
+
+features:
+    # 使用 Tab 来进行分类
+    # https://squidfunk.github.io/mkdocs-material/setup/setting-up-navigation/#navigation-tabs
+    - navigation.tabs
+    # 返回顶部的按钮，在上滑时出现
+    # https://squidfunk.github.io/mkdocs-material/setup/setting-up-navigation/#back-to-top-button
+    - navigation.top
+    # 给每个 Tab 添加一个 index.md，且在点击 Tab 时打开
+    # https://squidfunk.github.io/mkdocs-material/setup/setting-up-navigation/#section-index-pages-with-section-index-pages
+    - navigation.indexes
+    # 打开 Tab 时左侧目录全部展开
+    # https://squidfunk.github.io/mkdocs-material/setup/setting-up-navigation/#navigation-expansion
+    - navigation.expand
+    # 搜索输入一些字母时推荐补全整个单词
+    # https://squidfunk.github.io/mkdocs-material/setup/setting-up-site-search/#search-suggestions
+    - search.suggest
+    # 搜索的关键词文章加入高亮
+    # https://squidfunk.github.io/mkdocs-material/setup/setting-up-site-search/#search-highlighting
+    - search.highlight
+    # 可以通过按钮复制代码
+    # https://squidfunk.github.io/mkdocs-material/reference/code-blocks/#code-copy-button
+    - content.code.copy
+    # [点击按钮跳转至 GitHub 修改 Markdown 源文件]
+    # https://squidfunk.github.io/mkdocs-material/setup/adding-a-git-repository/#code-actions
+    - content.action.edit
+language: zh # 一些提示性的文字会变成中文

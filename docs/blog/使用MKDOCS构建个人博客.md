@@ -84,8 +84,6 @@ theme:
 
 ### 在githubPage中部署
 
-![image-20250316091911713](C:\Users\yumy9\AppData\Roaming\Typora\typora-user-images\image-20250316091911713.png)
-
 这里一定要注意：个人用户只有两种 GitHub Pages 网站的类型：一种是 `user`(用户)，一种是`project`(项目)。
 
 `user`类型的网址只能对应唯一的用户，而且仓库的名字必须为 `<username>.github.io`，对应的网址为 `http(s)://<username>.github.io`。
